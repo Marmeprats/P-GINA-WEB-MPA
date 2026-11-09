@@ -3,28 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título de mi Página</title>
+    <title>Stradivarius Style</title>
     <style>
-        body {
-            background-color: pink;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        a {
-            color: white;
-            text-decoration: underline;
+        body {
+            background-color: #ffffff;
+            color: #111111;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+        p.subtitle {
+            font-size: 0.9rem;
+            color: #666666;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+        .btn-link {
+            display: inline-block;
+            background-color: #000000;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 16px 32px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border: 1px solid #000000;
+            transition: all 0.3s ease;
+        }
+        .btn-link:hover {
+            background-color: #ffffff;
+            color: #000000;
         }
     </style>
 </head>
 <body>
-    <h1>¡Hola, mundo!</h1>
-    <p>Este es el contenido visible de la página web.</p>
-    <h2>María del Carmen Prats Ancela</h2>
-    
-    <p>
-        <a href="https://youtu.be/R8-rW8xk9FI?si=msYrTNZsed-u4gmX" target="_blank">Ver video recomendado</a>
-    </p>
+
+    <div class="container">
+        <h1>¡Hola, mundo!</h1>
+        <p class="subtitle">Este es el contenido visible de la página web.</p>
+        <h2>María del Carmen Prats Ancela</h2>
+        
+        <a href="https://youtu.be/R8-rW8xk9FI?si=msYrTNZsed-u4gmX" target="_blank" class="btn-link">
+            Ver video recomendado
+        </a>
+    </div>
+
 </body>
 </html>
